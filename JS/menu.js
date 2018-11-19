@@ -15,8 +15,8 @@ function startGame(){
        	create_power_bar();	// setup the location of the power bar on the map
 	create_binoculars();  // setup binoculars
 	document.getElementById("currentlocation").value=get_hero_position();
-  document.getElementById("energy").value=get_energy();
-  document.getElementById("terrain").value=get_terrain();
+  	document.getElementById("energy").value=get_energy();
+  	document.getElementById("terrain").value=get_terrain();
 	document.getElementById("whiffles").value = hero.whiffles;
 
 
@@ -53,7 +53,7 @@ function continueGame(){
         document.getElementById("currentlocation").value=get_hero_position();
         document.getElementById("energy").value=get_energy();
         document.getElementById("terrain").value=get_terrain();
-	      document.getElementById("whiffles").value = hero.whiffles;
+	document.getElementById("whiffles").value = hero.whiffles;
 
 
         // load state preserving file from localStorage above

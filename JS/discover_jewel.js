@@ -23,41 +23,6 @@ function win_game()
   }
 }
 
-//Creats a treasure2 instance on the map
-funciton treasure2 () {
-  x = 12; //X coordinate of treasure2
-  y = 9; //Y coordinate of treasure2
-  i = 0;
-  
-  //Find a random empty cell to place treasure2 in
-  /*For now, I am just placing it in a cell so i dont have to find it 
-  //each time I start the game
-  while (!i) {
-    x = Math.floor(Math.random()*(mapSize));
-    y = Math.floor(Math.random()*(mapSize));
-    
-    if (map[x][y].obstacle == "None")
-      i = 1;
-  }*/
-  
-  map[x][y].obstacle = "Treasure2";
-  treasure2.x = x; //Save informaiton into a global variable
-  treasure2.y = y; //Save informaiton into a global variable
-}
-
-//Checks if the hero is at treasure2
-function checkTreasure() {
-  
-  //If at treasure2 location, whiffles go to zero and the obstacle 
-  //if removed from the map.
-  if ((eval(hero.row_coordinate) == eval(treasure2.x)) &&
-      (eval(hero.column_coordinate) == eval(treasure2.y)))
-  {
-    hero.whiffles = 0;
-    remove_item_in_cell(treasure2.x,treasure2.y);
-    map[treasure2.x][treasure2.y].obstacle = "None";
-  }
-}
 
 // This assumes if the hero moves to the royal jewels with their last energy they win the game.
 // Otherwise, the hero runs out of energy and loses the game.

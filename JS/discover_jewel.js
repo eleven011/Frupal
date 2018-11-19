@@ -45,11 +45,15 @@ funciton treasure2 () {
 
 //Checks if the hero is at treasure2
 function checkTreasure() {
+  
+  //If at treasure2 location, whiffles go to zero and the obstacle 
+  //if removed from the map.
   if ((eval(hero.row_coordinate) == eval(treasure2.x)) &&
       (eval(hero.column_coordinate) == eval(treasure2.y)))
   {
     hero.whiffles = 0;
     remove_item_in_cell(treasure2.x,treasure2.y);
+    map[treasure2.x][treasure2.y].obstacle = "None";
   }
 }
 

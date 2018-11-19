@@ -25,18 +25,20 @@ function win_game()
 
 //Creats a treasure2 instance on the map
 funciton treasure2 () {
-  x = 0;
-  y = 0;
+  x = 12; //X coordinate of treasure2
+  y = 9; //Y coordinate of treasure2
   i = 0;
   
   //Find a random empty cell to place treasure2 in
+  /*For now, I am just placing it in a cell so i dont have to find it 
+  //each time I start the game
   while (!i) {
     x = Math.floor(Math.random()*(mapSize));
     y = Math.floor(Math.random()*(mapSize));
     
     if (map[x][y].obstacle == "None")
       i = 1;
-  }
+  }*/
   
   map[x][y].obstacle = "Treasure2";
   treasure2.x = x; //Save informaiton into a global variable

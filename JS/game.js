@@ -1,5 +1,22 @@
 document.getElementById("currentlocation").value=get_hero_position();
 document.getElementById("energy").value=get_energy();
+//document/getElementById("terrain").value=get_terrain();
+
+/*Gets the terrain of the hero's current location to display 
+function get_terrain() {
+	if (map[hero.row_coordinate][hero.column_coordinate].terrain == 1)
+		return "Forest";
+	else if (map[hero.row_coordinate][hero.column_coordinate].terrain == 2)
+		return "River";
+	else if (map[hero.row_coordinate][hero.column_coordinate].terrain == 3)
+		return "Wall";
+	else if (map[hero.row_coordinate][hero.column_coordinate].terrain == 4)
+		return "Bog";
+	else if (map[hero.row_coordinate][hero.column_coordinate].terrain == 5)
+		return "Swamp";
+	else
+		return "Meadow";
+} */
 
 // get the coordinates of the position the hero is at
 function get_hero_position(){

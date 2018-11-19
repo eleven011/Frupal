@@ -14,6 +14,7 @@ function startGame(){
         create_royal_jewel();  //setup the location of royal diamond on the map.
         document.getElementById("currentlocation").value=get_hero_position();
         document.getElementById("energy").value=get_energy();
+        document.getElementById("terrain").value=get_terrain();
 
 
         // put code above, parsing or setting or creating something necessary
@@ -48,6 +49,7 @@ function continueGame(){
     if (parse_map_file("save_map")){
         document.getElementById("currentlocation").value=get_hero_position();
         document.getElementById("energy").value=get_energy();
+        document.getElementById("terrain").value=get_terrain();
 
 
         // load state preserving file from localStorage above

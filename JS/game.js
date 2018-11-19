@@ -1,8 +1,14 @@
 document.getElementById("currentlocation").value=get_hero_position();
 document.getElementById("energy").value=get_energy();
-//document/getElementById("terrain").value=get_terrain();
+document.getElementById("terrain").value=get_terrain();
+document.getElementById("whiffles").value=get_whiffles();
 
-/*Gets the terrain of the hero's current location to display 
+//Gets the hero's whiffle count
+function get_whiffles() {
+	return hero.whiffles;
+}
+
+//Gets the terrain of the hero's current location to display 
 function get_terrain() {
 	if (map[hero.row_coordinate][hero.column_coordinate].terrain == 1)
 		return "Forest";
@@ -16,7 +22,7 @@ function get_terrain() {
 		return "Swamp";
 	else
 		return "Meadow";
-} */
+}
 
 // get the coordinates of the position the hero is at
 function get_hero_position(){
@@ -27,6 +33,8 @@ function get_hero_position(){
  function updateloc(){
  	document.getElementById("currentlocation").value=get_hero_position();	
 	document.getElementById("terrain").value=get_terrain();
+	checkTreasure();
+	document.getElementById("whiffles").value=get_whiffles();
  }
 
 // get the amount of energy the hero has left

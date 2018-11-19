@@ -49,7 +49,7 @@ function checkTreasure() {
       (eval(hero.column_coordinate) == eval(treasure2.y)))
   {
     hero.whiffles = 0;
-    //map[treasure2.x][treasure2.y].obstacle = "None"
+    remove_item_in_cell(treasure2.x,treasure2.y);
   }
 }
 

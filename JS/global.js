@@ -23,6 +23,13 @@ var powerbar = {
   x: 0,
   y: 0,
 }
+
+// contains the coordinates of type 1 treasure on the map
+var t1 = {
+  x: 0,
+  y: 0,
+}
+
 var map;  // two dimensional array to store each map cell
 // when parsing script performed successfully, it can use as:
 // example: map[3][5].row  map[3][5].col  map[3][5].visibility  map[3][5].terrain  map[3][5].obstacle

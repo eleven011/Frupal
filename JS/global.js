@@ -18,6 +18,13 @@ var jewel = {
   x: 0,
   y: 0,
 }
+
+//Contains the coordinates of treasure2
+var treasure2 = {
+  x: 0,
+  y: 0,
+}
+
 // contains the coordinates of the power bar on the map
 var powerbar = {
   x: 0,

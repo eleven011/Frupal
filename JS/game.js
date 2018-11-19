@@ -26,6 +26,7 @@ function get_hero_position(){
 // update location of the hero
  function updateloc(){
  	document.getElementById("currentlocation").value=get_hero_position();	
+	document.getElementById("terrain").value=get_terrain();
  }
 
 // get the amount of energy the hero has left

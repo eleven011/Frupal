@@ -14,6 +14,7 @@ function startGame(){
         create_royal_jewel();  //setup the location of royal diamond on the map.
        	create_power_bar();	// setup the location of the power bar on the map
 	create_binoculars();  // setup binoculars
+	treasure2(); //Creates an instance of a treasure2 on the map
 	document.getElementById("currentlocation").value=get_hero_position();
   	document.getElementById("energy").value=get_energy();
   	document.getElementById("terrain").value=get_terrain();

@@ -12,9 +12,12 @@ window.onbeforeunload = window.onunload = function (){
 function startGame(){
     if(parse_map_file("map")){  // when new name, parse map file
         create_royal_jewel();  //setup the location of royal diamond on the map.
-        document.getElementById("currentlocation").value=get_hero_position();
-        document.getElementById("energy").value=get_energy();
-        document.getElementById("terrain").value=get_terrain();
+       	create_power_bar();	// setup the location of the power bar on the map
+	create_binoculars();  // setup binoculars
+	document.getElementById("currentlocation").value=get_hero_position();
+  document.getElementById("energy").value=get_energy();
+  document.getElementById("terrain").value=get_terrain();
+	document.getElementById("whiffles").value = hero.whiffles;
 
 
         // put code above, parsing or setting or creating something necessary
@@ -50,6 +53,7 @@ function continueGame(){
         document.getElementById("currentlocation").value=get_hero_position();
         document.getElementById("energy").value=get_energy();
         document.getElementById("terrain").value=get_terrain();
+	      document.getElementById("whiffles").value = hero.whiffles;
 
 
         // load state preserving file from localStorage above

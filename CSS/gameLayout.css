@@ -20,6 +20,27 @@
     margin: 3px;
 }
 
+
+.btn-inventory{
+    width: 70%;
+    display: block;
+    padding: 8px;
+    font-size: 15px;
+    margin: 3px;
+    border: 1px solid rgb(52, 124, 124);
+    text-align: center;
+}
+
+#inventory-list{
+    display: none;
+}
+
+#inventory-list li{
+    padding: 3px;
+    font-size: 15px;
+}
+
+
 .modal-title{
     text-align: center;
     font-size: 20px;
@@ -44,7 +65,7 @@
     left: 0px;
 }
 
-/* default property for a single cell */
+/* default property for a single terrain cell */
 .default-cell{
     display: inline-block;
     border: 1px solid rgb(188, 226, 212);
@@ -78,8 +99,8 @@
 
 /* bog terraain */
 .bog{
-    background-color: rgb(174, 78, 212);
-    background-image: url();
+    background-color: rgb(171, 132, 99);
+    background-image: url("../images/bog.png");
 }
 
 .swamp{
@@ -104,6 +125,12 @@
     z-index: 1;
 }
 
+/* 
+    item list 
+    you can add every item's image here,
+    make sure the class name (item name) is consistent with the name in map file,
+    and the image must be in transparent background, otherwise it will cover terrain image.
+*/
 .Jewel{
     background-image: url("../images/diamond.png");
 }
@@ -134,5 +161,9 @@
 
 .Clue{
     background-image: url();
+}
+
+.Binoculars{
+    background-image: url("../images/binoculars.png");
 }
 

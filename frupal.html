@@ -18,16 +18,12 @@
     <div class = "container-fluid pageHeader">
         <h1 class="gameTitle">Frupal</h1>
     </div>
-    
-    <!--------Imports "map" file on localStorage----------------------->
-    <script src="map.html"></script>
-    <script src="map"></script>
 	
     <!----------------------------Game Start Menu---------------------->
     <div class="container-fluid" id="startPage">
         <button class="btn-primary startBtn" type="button" onclick="startGame()"><b>New Game</b></button><br>
 	<button class="btn-primary startBtn" type="button" onclick="continueGame()"><b>Continue Game</b></button><br>
-	<!button class="btn-info startBtn" type="button" data-toggle="modal" data-target="#config"<bGame Configuration</b</button> 
+	<button class="btn-info startBtn" type="button" data-toggle="modal" data-target="#config"><b>Game Configuration</b></button> 
     </div>
 
     <!----------------------------Game Configuration------------------->
@@ -71,6 +67,8 @@
                         Energy <input type="text" id="energy"><br>
                         Whiffles <input type="text" name="whiffles" value="100"><br>
                         Messages <input type="text" id="terrain"><br>
+                        Whiffles <input type="text" id="whiffles"><br>
+
                     </form>
                 </div>
 
@@ -101,6 +99,9 @@
         <button class="btn-danger startBtn" type="button" onclick="exitGame();"><b>Exit Game</b></button><br>
     </div>
 
+    <!--------Imports "map" file on localStorage----------------------->
+    <script src="map.html"></script>
+    <script src="map"></script>
 	
     <!-- include JavaScript files here -->
     <script src="JS/global.js"></script>
@@ -110,6 +111,7 @@
     <script src="JS/game.js"></script>    
     <script src="JS/discover_jewel.js"></script>
     <script src="JS/inventory.js"></script>
-
+    <script src="JS/power_bar.js"></script>
+    <script src="JS/binoculars.js"></script>
 </body>
 </html>
